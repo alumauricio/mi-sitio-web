@@ -1,0 +1,136 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0066cc;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Section */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.section h3 {
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+.card h4 {
+    margin-top: 0;
+}
+
+.card .btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #0066cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.logo a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del texto del h1 */
+}
+/* Estilos Responsivos */
+@media (max-width: 600px) {
+    header nav ul {
+        flex-direction: column; /* Cambia a vertical en pantallas pequeñas */
+        align-items: center; /* Centra los elementos en la columna */
+    }
+
+    .hero h2 {
+        font-size: 1.8rem; /* Reduce el tamaño del título en la sección hero */
+    }
+
+    .section h3 {
+        font-size: 1.5rem; /* Reduce el tamaño del título de la sección */
+    }
+
+    .card {
+        max-width: 90%; /* Aumenta el ancho máximo de las tarjetas en pantallas pequeñas */
+    }
+}
+
+img {
+    max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
